@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/* Tailwind v4 theme extension with official Yeki Figma design tokens */
+@theme inline {
+  --color-slate-purple: #7460e1;
+  --color-slate-purple-600: #6652d1;
+  --color-rhino-dark: #2c4364;
+  --color-rhino-400: #5a6981;
+  --color-app-dark: #18153a;
+  --color-app-surface: #1f1b40;
+
+  --font-display: 'Poppins', system-ui, sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+h1, .display {
+  font-family: var(--font-display);
+  font-feature-settings: "tnum", "ss01";
+}
+
+/* Beautiful marketing typography */
+.hero-title {
+  font-size: clamp(3.5rem, 8vw, 7.2rem);
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  color: #2c4364;
+}
+
+/* Phone content area polish */
+.phone-viewport {
+  background: linear-gradient(180deg, #1f1b40 0%, #18153a 100%);
+  color: white;
+}
+
+/* Subtle micro interactions */
+button, .interactive, .card {
+  transition: transform 0.12s cubic-bezier(0.23, 1, 0.32, 1), 
+              background-color 0.18s ease,
+              border-color 0.18s ease,
+              box-shadow 0.18s ease,
+              color 0.15s ease;
+}
+
+button:active {
+  transform: scale(0.985);
+}
+
+/* Touch target guidance: rely on explicit padding/h in components (compact pills use smaller but still usable) */
+
+/* Subtle mobile polish */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Tighter premium spacing rhythm for outer pages */
+.section-tight {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+@media (min-width: 640px) {
+  .section-tight {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}

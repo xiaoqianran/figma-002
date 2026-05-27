@@ -1,0 +1,39 @@
+/* Yeki VPN App UI Kit — Design Tokens (from Figma) */
+
+:root {
+  /* Brand - Slate Purple */
+  --yeki-purple-50: #f4f0fa;
+  --yeki-purple-100: #ebe3f5;
+  --yeki-purple-200: #d4c9f0;
+  --yeki-purple-300: #c9b9eb;
+  --yeki-purple-400: #b8a4e0;
+  --yeki-purple-500: #7460e1; /* Primary */
+  --yeki-purple-600: #6652d1;
+  --yeki-purple-700: #5a47b8;
+
+  /* Text & Surfaces - Rhino */
+  --yeki-rhino-400: #5a6981;
+  --yeki-rhino-500: #2c4364; /* Primary text */
+  --yeki-rhino-600: #1f334f;
+  --yeki-rhino-700: #16253a;
+
+  /* App Dark Theme */
+  --app-bg: #18153a;
+  --app-surface: #1f1b40;
+  --app-surface-2: #25214a;
+  --app-card: #ffffff;
+
+  /* Functional */
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Poppins', system-ui, sans-serif;
+}
+
+.phone-viewport {
+  background: var(--app-bg);
+  color: white;
+}
