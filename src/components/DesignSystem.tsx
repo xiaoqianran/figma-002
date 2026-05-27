@@ -22,6 +22,28 @@ export function DesignSystem() {
   }
 
   // ============================================
+  // Prominent Live Demo Link (About / Project Info)
+  // ============================================
+  const LiveDemoBanner = (
+    <div className="mb-8 p-5 bg-[#7460e1]/10 border border-[#7460e1]/30 rounded-3xl flex flex-col sm:flex-row sm:items-center gap-4">
+      <div className="flex-1">
+        <div className="font-semibold text-[#2c4364] mb-1">在线演示</div>
+        <div className="text-sm text-[#5a6981]">
+          本项目已完整部署至 GitHub Pages，可直接体验所有交互流程。
+        </div>
+      </div>
+      <a
+        href="https://xiaoqianran.github.io/figma-002/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center justify-center px-6 py-3 bg-[#7460e1] hover:bg-[#6652d1] text-white font-semibold rounded-2xl active:scale-[0.985] transition whitespace-nowrap"
+      >
+        打开在线演示 →
+      </a>
+    </div>
+  )
+
+  // ============================================
   // FULL DESIGN TOKENS — Expanded from tokens.css
   // ============================================
   const colorGroups = [
@@ -271,6 +293,9 @@ export function DesignSystem() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-8 py-10 sm:py-16">
+        {/* Prominent Live Demo Link - About / Project Info */}
+        {LiveDemoBanner}
+
         {/* Page Title */}
         <div className="mb-8 sm:mb-10">
           <div className="uppercase tracking-[3px] text-xs text-[#a8a1d8] mb-3">FROM FIGMA • IMPLEMENTED IN TOKENS.CSS</div>
