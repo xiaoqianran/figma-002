@@ -54,6 +54,17 @@ export function Hero() {
           <div className="mt-6 sm:mt-8 text-sm text-[#2c4364]/60">
             完整复刻自 Figma 设计稿 · 支持真实交互流程
           </div>
+
+          <div className="mt-4 text-sm">
+            <a 
+              href="https://xiaoqianran.github.io/figma-002/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-[#7460e1] hover:text-[#5a47b8] font-medium underline-offset-4 hover:underline"
+            >
+              🌐 在线演示（GitHub Pages）→
+            </a>
+          </div>
         </div>
 
         {/* Right Side - Mini Phone Teaser (hidden on mobile for clean layout) */}

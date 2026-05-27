@@ -1,5 +1,10 @@
 # Yeki VPN App UI Kit — 交互式 Web 展示站 & 原型实验室
 
+> **🌐 在线演示（推荐）**  
+> **[https://xiaoqianran.github.io/figma-002/](https://xiaoqianran.github.io/figma-002/)**  
+>
+> [![Live Demo](https://img.shields.io/badge/在线体验-立即访问-blue?style=for-the-badge&logo=github)](https://xiaoqianran.github.io/figma-002/)
+
 基于 Figma「Yeki - VPN App UI KIT」完整复刻 + 工程化落地的高质量交付物。
 
 ## 当前已实现功能（2026-05，持续高强度迭代中）
